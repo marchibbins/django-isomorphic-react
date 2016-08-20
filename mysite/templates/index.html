@@ -4,6 +4,7 @@
     <title>{{ title }}</title>
 </head>
 <body>
-    {{ react_html | safe }}
+    <div id="react-app">{{ react_html | safe }}</div>
+    <script type="text/javascript" src="/static/dist/bundle.js"></script>
 </body>
 </html>
