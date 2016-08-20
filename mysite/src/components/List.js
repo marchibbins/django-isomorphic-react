@@ -3,6 +3,11 @@ import { Link } from 'react-router';
 
 export default class List extends React.Component {
     render() {
+        /*
+         * TODO: 'Objects' should be result of data injected
+         * by Django (through serialized props) or AJAX calls thereafter.
+         * Similar scenario in src/components/List.js
+         */
         return (
             <div>
                 <h1>Django-isomorphic-react</h1>
