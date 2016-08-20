@@ -8,7 +8,7 @@ import settings
 
 def index(request):
     react_html = render_component(
-        os.path.join(settings.BASE_DIR, 'mysite', 'static', 'App.js'),
+        os.path.join(settings.BASE_DIR, 'mysite', 'src', 'App.js'),
         props={'path': request.path}
     )
 
