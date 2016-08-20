@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router';
 
-import HelloWorld from './components/HelloWorld';
-import Example from './components/Example';
+import List from './components/List';
+import Detail from './components/Detail';
 
 /*
  * TODO: Routes are present here in JS as well as Django urlconf,
@@ -12,7 +12,7 @@ import Example from './components/Example';
  */
 
 export default (
-    <Route path="/" component={HelloWorld}>
-        <Route path="/example" component={Example}></Route>
+    <Route path="/" component={List}>
+        <Route path="/:id/" component={Detail}></Route>
     </Route>
 );

@@ -1,6 +1,6 @@
 from django.conf.urls import url
 
-from views import index
+from views import detail_view, list_view
 
 # TODO: URLs are present here as well as in JS routes,
 # since Django is handling HTTP requests we don't want
@@ -9,6 +9,6 @@ from views import index
 # See mysite/routes.js
 
 urlpatterns = [
-    url(r'^example/$', index, name='index'),
-    url(r'^$', index, name='index'),
+    url(r'^(?P<pk>[0-9]+)/$', detail_view),
+    url(r'^$', list_view),
 ]
