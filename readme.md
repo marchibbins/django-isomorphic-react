@@ -1,4 +1,4 @@
-## Isomorphic-iso-react
+## Django-isomorphic-react
 
 ### Node
 - Get dependencies with `npm install`
